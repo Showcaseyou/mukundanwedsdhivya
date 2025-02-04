@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdf5f6;
+    color: #444;
+    overflow-x: hidden;
+  }
+  
+  /* Welcome Section */
+  #welcome-section {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
+      ),
+      url('IC7A4035.JPG') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  
+  /* Main Heading */
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #c59d5f;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: visible;
+    padding: 10px; /* Add breathing space */
+  }
+  
+  
+  
+  /* Tagline */
+  .tagline {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #555;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  /* Album Button */
+  .album-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #c59d5f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .album-button:hover {
+    background-color: #9e7e4c;
+    transform: scale(1.05);
+  }
+  
+  /* Subtext */
+  .subtext {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+    .tagline {
+      font-size: 1.5rem;
+    }
+    .album-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Ensure the container allows the shimmer effect to extend */
+  h1 {
+    position: relative;
+    overflow: visible;
+    padding: 10px; /* Add breathing space */
+  }
+  
+  /* Tinkling Effect */
+  .sparkle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #c59d5f;
+    position: relative;
+    background: linear-gradient(90deg, #c59d5f, #ffd700, #c59d5f);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s infinite;
+    padding: 5px; /* Ensure gradient has extra space */
+  }
+  
+  
+  
+  @keyframes shimmer {
+    0% {
+      background-position: 200%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+  
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+    50% {
+      opacity: 0.6;
+      transform: translate(0, 0) scale(1.2);
+    }
+  }
+  
+  /* Custom Button Styles */
+.custom-button {
+  font-family: serif; /* Adjust font to match your style */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000; /* Text color */
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #ffe79e, #f5c067); /* Gradient background */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), /* Shadow for depth */
+              inset 0px 1px 3px rgba(255, 255, 255, 0.6); /* Glow effect inside */
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from the link */
+  display: inline-block; /* Ensure proper alignment */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.custom-button:hover {
+  background: linear-gradient(180deg, #ffe08c, #e3a74c); /* Slightly darker gradient */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3), 
+              inset 0px 2px 4px rgba(255, 255, 255, 0.7); /* Enhance shadow/glow */
+  transform: scale(1.02); /* Slight enlargement on hover */
+}
+
+.custom-button:active {
+  background: linear-gradient(180deg, #f7d49b, #d89a4c); /* Pressed button effect */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 
+              inset 0px 1px 2px rgba(255, 255, 255, 0.5);
+  transform: scale(0.98); /* Slight compression */
+}
+  

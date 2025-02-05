@@ -3,7 +3,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6; /* Default line height */
   color: #333;
-  background: url('IC7A4035.JPG') center/cover fixed no-repeat; /* Add your background image */
+  background: url('IC7A4035.jpg') center/cover fixed no-repeat; /* Add your background image */
   background-color: #fdf5f6; /* Fallback color if the image fails to load */
   min-height: 100vh;
   margin: 0; /* Remove default margin */
